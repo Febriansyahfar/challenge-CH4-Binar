@@ -14,6 +14,10 @@ let words = '';
 	words = currentTxt.slice (0, ++txtIndex);
 	document.querySelector('.headerTitle').textContent = words;
 
+	if(words.length == currentTxt.length){
+		count++;
+		txtIndex = 0;
+	}
 	setTimeout(text, 500);
 
 
